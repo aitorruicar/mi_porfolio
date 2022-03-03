@@ -16,6 +16,7 @@ class Mi_perfil extends BaseController
     public function modeloscreados()
     {
         $M_usuario = new M_usuario(); 
+        
         $id = $M_usuario->insert(
             [
                 "name" => "Aitor",
