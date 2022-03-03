@@ -1,0 +1,19 @@
+{
+  "name": "mi_porfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aitor",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.27.7",
+    "browsersync": "0.0.1-security",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "sass": "^1.49.9"
+  }
+}
