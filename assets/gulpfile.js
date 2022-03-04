@@ -4,7 +4,7 @@ var sourcemaps = require('gulp-sourcemaps');
 var browserSync = require('browser-sync').create(); 
 
 gulp.task('sass', function () {
-    return gulp.src('./sass/main.scss') 
+    return gulp.src('./sass/**/*.scss') 
     .pipe(sourcemaps.init()) 
     .pipe(sass({outputStyle :'compressed'}).on('error', sass.logError)) 
     .pipe(sourcemaps.write())
@@ -21,7 +21,7 @@ gulp.task('serve', function ()
             
         }
     );
-    gulp.watch ('./sass/main.scss', gulp.series('sass')); 
+    gulp.watch ('./sass/**/*.scss', gulp.series('sass')); 
 
 })
 
