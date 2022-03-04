@@ -2,7 +2,7 @@ nav
 {
     margin-bottom: 1.5rem;
     padding: 0.75rem 24px;
-    background-color: $colorBlack;
+    background-color: $colorBlackTransparent;
     position: fixed;
     width: 100%;
     -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.29); 
@@ -13,48 +13,28 @@ nav
        width: 3.5rem; 
        cursor: pointer;
        filter: drop-shadow(5px 5px 10px rgba(255, 228, 236, 0.27));
+
+       @media (min-width: 576px) {
+        display: none;
+        }
     }
 
     #menu
     {
-        list-style: none; 
         position: fixed;
-        background-color: $colorSemiBold;
-        border-top:1px solid #ffe4ec;
-        width: 100%;
-        height: calc(100vh - 83px);
         left: -576px;
         top: 83px;
+
+        width: 70%;
+        height: calc(100vh - 83px);
+        padding: 0.75rem 0 0; 
+        background-color: $colorSemiBold;
+        
         transition: 01s;
         transition-timing-function: ease;
 
-        padding: 0.75rem 0 0; 
-
-        li
+        @media (max-width: 575px) 
         {
-            margin-bottom: 0.75rem;
-            border-bottom: 1px solid $colorLight;
-            padding: 0 24px 0.75rem;
-            a
-            {
-                text-decoration: none;
-                font-size: 1.5rem;
-                font-weight: 600;
-                color: $colorLight;
-
-                display: flex;
-                flex-flow: row wrap;
-                justify-content: space-between;
-                align-items: center;
-
-                img
-                {
-                    margin-right: .5rem;
-                }
-            }
-        }
-
-        @media (max-width: 576px) {
             &.active
             {
                 left: 0;
@@ -62,6 +42,70 @@ nav
                 box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.29);
             }
         }
+
+        @media (min-width: 576px) {
+            position: static;
+            background-color: transparent;
+            width: 100%;
+            height: auto;
+            padding: 0.75rem 24px; 
+
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-evenly;
+        }
+
+        li
+        {
+            margin-bottom: 0.75rem;
+            border-bottom: 1px solid $colorLight;
+            padding: 0 24px 0.75rem;
+
+            @media (min-width: 576px) {
+               margin: 0;
+               padding: 0 0.75rem 0 0.75rem;
+               border: none;
+            }
+
+            a
+            {
+                text-decoration: none;
+                font-size: 1.25rem;
+                font-weight: 600;
+                color: $colorLight;
+                transition: 0.3s;
+
+                @media (max-width: 575px) 
+                {
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+
+                @media (min-width: 576px) {
+                    font-size: 1.2rem;
+                    
+                    &:hover
+                    {
+                        color: $colorRegular;
+                    }
+                }
+
+                img
+                {
+                    margin-right: .5rem;
+
+                    @media (min-width: 576px) {
+                        display: none;
+                     }
+                }
+            }
+        }
+
+        
+
+        
         
         
         

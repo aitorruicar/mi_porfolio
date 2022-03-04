@@ -13,10 +13,57 @@ body
     font-weight: 400;
     background-color: $colorWhite;
     color: $colorBlack; 
+
+    ul
+    {
+        list-style: none; 
+    }
+
+    span
+    {
+        &.title
+        {
+            color: $colorBold;
+            font-weight: 600;
+            margin-right: .2rem;
+            font-size: 1.1rem;
+        }
+
+        &.value
+        {
+            font-weight: 600;
+        }
+    }
+
+    .img-responsive    
+    {
+        font-size: 0;
+        line-height: 0;
+
+        img
+        {
+            width: 100%;
+        }
+        
+    }
+}
+
+header
+{
+    padding: 116px 24px 0;
+    margin-bottom: 1.5rem;
 }
 
 main
 {
-    padding-top: 116px;
-    padding: 116px 24px 30px;
+    padding: 0 24px 30px;
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: $colorSemiBold;
+    color: $colorLight;
+    text-align: center;
+    padding: 1.5rem 24px;
 }
