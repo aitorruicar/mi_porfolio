@@ -4,6 +4,8 @@ nav
     padding: 0.75rem 24px;
     background-color: $colorBlack;
     position: relative;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.29); 
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.29);
 
     #menu-icon
     {
@@ -11,36 +13,51 @@ nav
        cursor: pointer;
     }
 
-    ul
+    #menu
     {
         list-style: none; 
         position: absolute;
         background-color: $colorSemiBold;
+        border-top:1px solid #ffe4ec;
         width: 100%;
-        left: -800px;
-        top: 59;
-        transition: 0.3s;
+        height: calc(100vh - 83px);
+        left: -576px;
+        top: 83px;
+        transition: 01s;
+        transition-timing-function: ease;
 
-        padding: 0 24px 0.7rem;
+        padding: 0.75rem 0 0; 
 
         li
         {
-            margin-top: 0.7rem;
-            border-bottom: 2px solid $colorLight;
-            padding-bottom: 0.3rem;
+            margin-bottom: 0.75rem;
+            border-bottom: 1px solid $colorLight;
+            padding: 0 24px 0.75rem;
             a
             {
                 text-decoration: none;
                 font-size: 1.5rem;
                 font-weight: 600;
                 color: $colorLight;
+
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-between;
+                align-items: center;
+
+                img
+                {
+                    margin-right: .5rem;
+                }
             }
         }
 
-        @media (min-width: 576px) {
+        @media (max-width: 576px) {
             &.active
             {
-                left: 0;  //
+                left: 0;
+                -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.29); 
+                box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.29);
             }
         }
         
