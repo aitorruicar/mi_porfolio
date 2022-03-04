@@ -3,7 +3,8 @@ nav
     margin-bottom: 1.5rem;
     padding: 0.75rem 24px;
     background-color: $colorBlack;
-    position: relative;
+    position: fixed;
+    width: 100%;
     -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.29); 
     box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.29);
 
@@ -11,12 +12,13 @@ nav
     {
        width: 3.5rem; 
        cursor: pointer;
+       filter: drop-shadow(5px 5px 10px rgba(255, 228, 236, 0.27));
     }
 
     #menu
     {
         list-style: none; 
-        position: absolute;
+        position: fixed;
         background-color: $colorSemiBold;
         border-top:1px solid #ffe4ec;
         width: 100%;
