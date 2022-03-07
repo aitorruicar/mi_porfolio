@@ -1,0 +1,34 @@
+section.experiencia
+{
+    display: grid;
+
+    @media (min-width: 992px) {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    h2{
+         margin-top: 1.5rem;
+    }
+
+    .experiencia-content
+    {
+        margin-top: 1.5rem;
+        
+        p
+        {
+            &.name
+            {
+                font-size: 1.5rem;
+                font-weight: 600;
+                color: $colorSemiBold;
+            }
+            &.sub
+            {
+                font-size: 1.2rem;
+                font-weight: 600;
+                color: $colorRegular; 
+            }
+        }
+    }
+}

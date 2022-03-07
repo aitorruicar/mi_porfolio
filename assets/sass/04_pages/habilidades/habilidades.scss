@@ -1,12 +1,70 @@
 section.habilidades
 {
+    display: grid;
+
+    @media (min-width: 992px) {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    h2
+    {
+        margin-top: 1.5rem;
+    }
+    
     .habilidades-content
     {
         display: flex;
-        flex-flow: column wrap;
-        span
-        {
+        flex-flow: row wrap;
+        justify-content: space-between;
 
+        .circle-habilidad:nth-child(even)
+        {
+            background-color: $colorLight;
+
+            span
+            {
+                color: $colorBold;
+            }
         }
+        
+        .circle-habilidad:nth-child(odd)
+        {
+            background-color: $colorNormal;
+
+            span
+            {
+                color: $colorSemiBold;
+            }
+        }
+
+        .circle-habilidad
+        {
+            margin-top: 1.5rem;
+            width: 10rem;
+            height: 10rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+
+            @media (min-width: 992px) {
+                width: 12rem;
+                height: 12rem;
+            }
+
+            span
+            {
+                font-size: 1.5rem;
+                font-weight: 600;
+                text-transform: uppercase;
+
+                @media (min-width: 992px) {
+                    font-size: 1.7rem;
+                }
+
+            }
+        }
+
     }
 }
