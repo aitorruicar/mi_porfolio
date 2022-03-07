@@ -1,12 +1,12 @@
 {
-  "name": "mi_porfolio",
+  "name": "assets",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
+  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Aitor",
+  "author": "Aitor Ruiz",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.27.7",

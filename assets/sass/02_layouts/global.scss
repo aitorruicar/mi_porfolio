@@ -52,6 +52,10 @@ header
 {
     padding: 116px 24px 0;
     margin-bottom: 1.5rem;
+    @media (min-width: 992px) {
+        width: 80%;
+        margin: 0 auto 1.5rem;
+    }
 }
 
 main
