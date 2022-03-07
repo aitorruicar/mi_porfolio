@@ -1,7 +1,6 @@
-section.experiencia
+section.educacion
 {
     display: grid;
-
 
     @media (min-width: 992px) {
         width: 80%;
@@ -12,7 +11,7 @@ section.experiencia
          margin-top: 1.5rem;
     }
 
-    .experiencia-content
+    .cursos-content
     {
         margin-top: 1.5rem;
 
@@ -21,7 +20,44 @@ section.experiencia
             flex-flow: row wrap;
             justify-content: space-between;
         }
+
+        div
+        {
+            padding-bottom: 1.5rem;
+
+            @media (min-width: 992px) {
+                width: 45%;
+            }
+        }
         
+        p
+        {
+            &.name
+            {
+                font-size: 1.5rem;
+                font-weight: 600;
+                color: $colorSemiBold;
+                margin-bottom: 0.2rem;
+            }
+            &.sub
+            {
+                font-size: 1.2rem;
+                font-weight: 600;
+                color: $colorRegular; 
+            }
+        }
+    }
+
+    .educacion-content
+    {
+        margin-top: 1.5rem;
+        border-bottom: 2px solid $colorSemiBold;
+
+        @media (min-width: 992px) {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+        }
 
         div
         {
@@ -56,5 +92,4 @@ section.experiencia
             }
         }
     }
-
 }

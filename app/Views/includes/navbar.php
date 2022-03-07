@@ -7,7 +7,7 @@
         <li><a href="<?php echo base_url() . '/sobre_mi/' ?>">Sobre mi <img src="<?php echo base_url() . '/assets/img/icons/arrow-right.svg'?>" alt=""></a></li>
         <li><a href="<?php echo base_url() . '/habilidades/' ?>">Habilidades <img src="<?php echo base_url() . '/assets/img/icons/arrow-right.svg'?>" alt=""></a></li>
         <li><a href="<?php echo base_url() . '/experiencia/' ?>">Experiencia <img src="<?php echo base_url() . '/assets/img/icons/arrow-right.svg'?>" alt=""></a></li>
-        <li><a href="">Educación <img src="<?php echo base_url() . '/assets/img/icons/arrow-right.svg'?>" alt=""></a></li>
+        <li><a href="<?php echo base_url() . '/educacion/' ?>">Educación <img src="<?php echo base_url() . '/assets/img/icons/arrow-right.svg'?>" alt=""></a></li>
         <li><a href="">Contacto <img src="<?php echo base_url() . '/assets/img/icons/arrow-right.svg'?>" alt=""></a></li>
     </ul>
 </nav>

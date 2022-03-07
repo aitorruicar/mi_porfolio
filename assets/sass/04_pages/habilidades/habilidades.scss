@@ -4,37 +4,65 @@ section.habilidades
 
     @media (min-width: 992px) {
         width: 80%;
-        margin: 0 auto;
+        margin: 0 auto 1.5rem;
     }
 
     h2
     {
         margin-top: 1.5rem;
+
     }
     
     .habilidades-content
     {
         display: flex;
         flex-flow: row wrap;
-        justify-content: space-between;
+        justify-content: space-evenly;
+
+        @media (min-width: 1200px) {
+            margin: 0;
+        }
+
 
         .circle-habilidad:nth-child(even)
         {
             background-color: $colorLight;
+            transition: .3s;
 
             span
             {
                 color: $colorBold;
             }
+
+            &:hover
+            {
+                background-color: $colorNormal;
+
+                span
+                {
+                    color: $colorSemiBold;
+                }
+            }
         }
         
         .circle-habilidad:nth-child(odd)
         {
-            background-color: $colorNormal;
+            background-color: $colorSemiBold;
+            transition: .3s;
 
             span
             {
-                color: $colorSemiBold;
+                color: $colorNormal;
+            }
+
+            &:hover
+            {
+                background-color: $colorNormal;
+
+                span
+                {
+                    color: $colorSemiBold;
+                }
             }
         }
 
